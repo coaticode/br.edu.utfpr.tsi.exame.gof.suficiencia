@@ -1,8 +1,8 @@
-Registro Acadêmico IFPR - Design Patterns GoF
-[cite_start]Este projeto implementa um ecossistema de software para o Registro Acadêmico do IFPR, focado em extensibilidade, eficiência e manutenibilidade através da aplicação rigorosa de padrões de projeto do catálogo GoF[cite: 86].
-🎯 Objetivo do Projeto
-[cite_start]Demonstrar a aplicação de padrões criacionais, estruturais e comportamentais para criar um sistema resiliente ao legado, onde o custo de manutenção é reduzido pelo baixo acoplamento[cite: 120, 122].
+Registro Acadêmico  - Design Patterns GoF
 --------------------------------------------------------------------------------
+🎯 Objetivo do Projeto
+[cite_start]Demonstrar a aplicação de padrões criacionais, estruturais e comportamentais para simular um sistema resiliente ao legado, onde o custo de manutenção é reduzido pelo baixo acoplamento[cite: 120, 122].
+
 🏗️ Padrões Utilizados
 1. Fase de Construção (Infraestrutura)
 
