@@ -42,25 +42,19 @@ src/main/java/br/edu/utfpr/tsi/exame/gof
 🛡️ Táticas de Sobrevivência ao Legado
 
 O sistema foi projetado para enfrentar desafios reais de engenharia de software:
-Tática
-Padrão
-	
-Impacto no Ciclo de Vida
-Isolamento de Libs
-	
-Adapter
-	
-Atualização de dependências vulneráveis sem reescrever o negócio.
-Extensibilidade
-	
-Decorator
-	
-Adição de funções em módulos antigos e sensíveis sem risco.
-Flexibilidade
-	
-Strategy
 
-Novas regras de negócio não quebram as antigas.
+> Padrão: Adapter
+	Tática: Isolamento de Libs
+	Impacto no Ciclo de Vida: Permite atualizar bibliotecas vulneráveis sem reescrever o negócio.
+
+> Padrão: Decorator
+	Tática: Extensibilidade.
+	Impacto no Ciclo de Vida: Adiciona funções em módulos antigos e sensíveis sem risco.
+		
+> Padrão: Strategy
+	Tática: Flexibilidade.
+	Impacto no Ciclo de Vida: Novas regras de negócio não quebram as implementações antigas.
+	
 
 --------------------------------------------------------------------------------
  🚀 Como Executar
