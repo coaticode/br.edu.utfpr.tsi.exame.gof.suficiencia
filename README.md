@@ -23,13 +23,14 @@ Demonstrar a aplicação de padrões criacionais, estruturais e comportamentais 
 📂 Arquitetura e Organização
 O projeto segue uma hierarquia de pacotes baseada na Separação de Preocupações:
 
-
+```text
 src/main/java/br/edu/utfpr/tsi/exame/gof
 ├── app        # Ponto de entrada (Programa.java)
 ├── model      # Entidades de domínio (Usuario.java)
 ├── dao        # Abstrações e implementações de dados
 ├── infra      # Gerenciamento de conexão e persistência
 └── patterns   # Implementação isolada dos padrões GoF
+```
 
 --------------------------------------------------------------------------------
 🛡️ Táticas de Sobrevivência ao Legado
