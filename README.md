@@ -1,7 +1,10 @@
 Registro Acadêmico  - Design Patterns GoF
 --------------------------------------------------------------------------------
 🎯 Objetivo do Projeto
-Demonstrar a aplicação de padrões criacionais, estruturais e comportamentais para simular um sistema resiliente ao legado, onde o custo de manutenção é reduzido pelo baixo acoplamento.
+Demonstrar a aplicação de padrões criacionais, estruturais e comportamentais para "SIMULAR" um sistema resiliente ao legado, onde o custo de manutenção é reduzido pelo baixo acoplamento.
+obs. 
+	1. Não houve integração com bancos MySQL/NoSQL.
+	2. A lista de usuários é gerada no UsuarioDAOImplements.java
 
 🏗️ Padrões Utilizados
 1. Fase de Construção (Infraestrutura)
