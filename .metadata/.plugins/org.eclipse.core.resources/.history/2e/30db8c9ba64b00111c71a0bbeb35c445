@@ -1,0 +1,22 @@
+package br.edu.utfpr.tsi.exame.gof.aqestruturais;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+/**
+ * Padrão: Adapter
+ * Justificativa: Adapta a biblioteca profissional Apache Log4j para a interface 
+ * simples 'MeuLogger'. Isso permite que a aplicação use um log robusto
+ * sem se acoplar diretamente as classes da Apache.
+ */
+public class Log4jAdapter implements MeuLogger {
+    
+	//objeto real da lib externa
+    private static final Logger loggerExterno = LogManager.getLogger(Log4jAdapter.class);
+
+    @Override
+    public void registrar(String mensagem) {
+      
+        loggerExterno.info("LOG TSI UTFPR: " + mensagem);
+    }
+}

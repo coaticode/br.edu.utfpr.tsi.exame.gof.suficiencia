@@ -1,0 +1,44 @@
+package br.edu.utfpr.tsi.exame.gof.arestruturais;
+
+import java.util.List;
+
+import br.edu.utfpr.tsi.exame.gof.suficiencia.dao.UsuarioDAO;
+import br.edu.utfpr.tsi.exame.gof.suficiencia.model.Usuario;
+import br.edu.utfpr.tsi.exame.gof.comportamentais.RegistroObserver;
+
+/**
+	 * Padrão: Decorator
+	 * Justificativa: Adiciona a funcionalidade de medição de desempenho (Eficiencia)
+	 * ao DAO original sem modificar seu codigo fonte, respeitando o principio Open/Closed.
+	 */
+public class MonitorDesenpenhoDecorator implements UsuarioDAO{    
+	    private UsuarioDAO daoDecorado;
+
+	    public MonitorDesenpenhoDecorator(UsuarioDAO dao) {
+	        this.daoDecorado = dao;
+	    }
+
+	    @Override
+	    public List<Usuario> listarTodos() {
+	        long inicio = System.currentTimeMillis();
+	        
+	        //Comportamento original
+	        List<Usuario> resultado = daoDecorado.listarTodos();
+	         
+	        long fim = System.currentTimeMillis();
+	        System.out.println("[DECORATOR] Eficiência da Operação: " + (fim - inicio) + "ms");
+	        
+	        return resultado;
+	    }
+
+		@Override
+		public void adicionarObservador(RegistroObserver observer) {
+			daoDecorado.adicionarObservador(observer);			
+		}
+
+		@Override
+		public void removerObservador(RegistroObserver observer) {
+			// TODO Auto-generated method stub
+			
+		}
+	}

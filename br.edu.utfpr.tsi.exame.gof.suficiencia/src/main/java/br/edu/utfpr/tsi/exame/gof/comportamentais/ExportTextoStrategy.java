@@ -1,0 +1,18 @@
+package br.edu.utfpr.tsi.exame.gof.comportamentais;
+
+import java.util.List;
+
+import br.edu.utfpr.tsi.exame.gof.suficiencia.model.Usuario;
+
+public class ExportTextoStrategy implements ExportStrategy{
+
+	@Override
+	public void exportar(List<Usuario> usuarios) {		
+		System.out.println("[STRATEGY] Exportando para Relatório de Texto (.txt)...");
+        for (Usuario u : usuarios) {
+            System.out.println("ALUNO: " + u.getNome() + " | EMAIL: " + u.getEmail());
+        }
+		
+	}
+
+}

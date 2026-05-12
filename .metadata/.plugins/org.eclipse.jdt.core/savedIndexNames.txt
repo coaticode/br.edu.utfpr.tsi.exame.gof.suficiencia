@@ -1,0 +1,8 @@
+INDEX VERSION 1.134+/Users/sm-33/UTFPR 2026/ExameGOF/.metadata/.plugins/org.eclipse.jdt.core
+234105334.index
+1083613183.index
+3675208711.index
+1362032482.index
+1400752161.index
+2025079477.index
+1865797976.index

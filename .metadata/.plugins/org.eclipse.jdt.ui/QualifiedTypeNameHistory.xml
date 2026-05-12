@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="br.edu.utfpr.tsi.exame.gof.criacionais.ConexaoBanco"/>
+    <fullyQualifiedTypeName name="br.edu.utfpr.tsi.exame.gof.criacionais.IUsuarioDAO"/>
+    <fullyQualifiedTypeName name="br.edu.utfpr.tsi.exame.gof.comportamentais.ExportStrategy"/>
+    <fullyQualifiedTypeName name="br.edu.utfpr.tsi.exame.gof.comportamentais.RegistroObserver"/>
+    <fullyQualifiedTypeName name="br.edu.utfpr.tsi.exame.gof.criacionais.UsuarioDAOImplements"/>
+    <fullyQualifiedTypeName name="br.edu.utfpr.tsi.exame.gof.criacionais.UsuarioDAO"/>
+    <fullyQualifiedTypeName name="br.edu.utfpr.tsi.exame.gof.estruturais.MonitorDesenpenhoDecorator"/>
+</qualifiedTypeNameHistroy>

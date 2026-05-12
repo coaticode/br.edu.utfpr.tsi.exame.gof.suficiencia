@@ -1,0 +1,49 @@
+package br.edu.utfpr.tsi.exame.gof.arcriacionais;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.function.Supplier;
+
+import br.edu.utfpr.tsi.exame.gof.suficiencia.database.ConexaoBanco;
+import br.edu.utfpr.tsi.exame.gof.suficiencia.database.ConexaoNoSQL;
+import br.edu.utfpr.tsi.exame.gof.suficiencia.database.ConexaoSQL;
+
+/**
+ 	> Padrão: Factory Method
+ 	> Justificativa: Centraliza a lógica de criação de objetos de conexão, 
+    > permitindo que o sistema suporte novos bancos sem alterar o código cliente.
+ */
+
+//public class ConexaoFactory {
+//	public static ConexaoBanco criarConexao(String tipo) {
+//		
+//        if (tipo.equalsIgnoreCase("SQL")) {
+//            return new ConexaoSQL();
+//        } else if (tipo.equalsIgnoreCase("NOSQL")) {
+//            return new ConexaoNoSQL();
+//        }
+//        throw new IllegalArgumentException("Tipo de banco não suportado.");
+//    }
+//}
+
+public class ConexaoFactory {
+   
+    private static final Map<String, Supplier<ConexaoBanco>> conexoesMap = new HashMap<>();
+
+    
+    static {
+        conexoesMap.put("SQL", ConexaoSQL::new);
+        conexoesMap.put("NOSQL", ConexaoNoSQL::new);
+        
+    }
+
+    public static ConexaoBanco criarConexao(String tipo) {
+        Supplier<ConexaoBanco> supplier = conexoesMap.get(tipo.toUpperCase());
+        
+        if (supplier == null) {
+            throw new IllegalArgumentException("Tipo de banco não suportado: " + tipo);
+        }
+        
+        return supplier.get();
+    }
+}
