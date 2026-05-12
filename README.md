@@ -7,16 +7,19 @@ Demonstrar a aplicação de padrões criacionais, estruturais e comportamentais 
 1. Fase de Construção (Infraestrutura)
 
     Singleton: Gerencia a instância única do banco de dados, evitando redundância de conexões e vazamento de recursos.
+   
     Factory Method: Desacopla a lógica de instanciação do DAO (SQL ou NoSQL), permitindo suporte a novos bancos sem alterar o código cliente.
 
-2. Fase Estrutural (Auditoria e Integração)
+3. Fase Estrutural (Auditoria e Integração)
 
     Adapter: Integra bibliotecas externas (como Log4j) via composição, permitindo a troca de libs de terceiros sem impactar a regra de negócio.
+   
     Decorator: Adiciona responsabilidades dinamicamente, como o monitoramento de performance (cronometragem de listagens), sem "sujar" o código original.
 
-3. Fase de Comportamento (Flexibilidade)
+4. Fase de Comportamento (Flexibilidade)
 
     Observer: Implementa um sistema de notificações para interessados (TI/Secretaria) sobre acessos ao sistema de forma passiva e desacoplada.
+   
     Strategy: Permite a variação de algoritmos de exportação (JSON/TXT) em tempo de execução através de injeção de dependência.
 
 --------------------------------------------------------------------------------
