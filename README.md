@@ -5,6 +5,7 @@ Demonstrar a aplicação de padrões criacionais, estruturais e comportamentais 
 
 Obs. 
 	1. Não houve integração com bancos MySQL/NoSQL.
+	
 	2. A lista de usuários é gerada no UsuarioDAOImplements.java
 
 🏗️ Padrões Utilizados
