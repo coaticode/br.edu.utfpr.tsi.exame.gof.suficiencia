@@ -40,9 +40,9 @@ src/main/java/br/edu/utfpr/tsi/exame/gof
 
 --------------------------------------------------------------------------------
 🛡️ Táticas de Sobrevivência ao Legado
+
 O sistema foi projetado para enfrentar desafios reais de engenharia de software:
 Tática
-	
 Padrão
 	
 Impacto no Ciclo de Vida
