@@ -42,7 +42,7 @@ src/main/java/br/edu/utfpr/tsi/exame/gof
 🛡️ Táticas de Sobrevivência ao Legado
 
 O sistema foi projetado para enfrentar desafios reais de engenharia de software:
-
+```text
 > Padrão: Adapter
 	Tática: Isolamento de Libs
 	Impacto no Ciclo de Vida: Permite atualizar bibliotecas vulneráveis sem reescrever o negócio.
@@ -55,7 +55,7 @@ O sistema foi projetado para enfrentar desafios reais de engenharia de software:
 	Tática: Flexibilidade.
 	Impacto no Ciclo de Vida: Novas regras de negócio não quebram as implementações antigas.
 	
-
+```
 --------------------------------------------------------------------------------
  🚀 Como Executar
 
