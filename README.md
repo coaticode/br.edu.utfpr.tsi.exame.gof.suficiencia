@@ -56,17 +56,18 @@ Adição de funções em módulos antigos e sensíveis sem risco.
 Flexibilidade
 	
 Strategy
-	
+
 Novas regras de negócio não quebram as antigas.
+
 --------------------------------------------------------------------------------
-🚀 Como Executar
-Certifique-se de ter o Java 17+ instalado.
+ 🚀 Como Executar
+
+    Certifique-se de ter o Java 17+ instalado.
     Clone o repositório: git clone url;
-	Mavem clean.
+	maven clean
     Compile o projeto.
     Execute a classe principal: br.edu.utfpr.tsi.exame.gof.app.Programa
---------------------------------------------------------------------------------
 
+--------------------------------------------------------------------------------
 🎓 Justificativa Acadêmica
 Ao aplicar os princípios SOLID (como DIP e OCP) através dos padrões GoF, este projeto demonstra maturidade técnica ao proteger o investimento futuro, facilitando a troca de componentes de infraestrutura com risco mínimo.
---------------------------------------------------------------------------------
